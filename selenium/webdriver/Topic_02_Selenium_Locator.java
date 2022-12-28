@@ -19,6 +19,7 @@ public class Topic_02_Selenium_Locator {
 	//Check why it does not work with windows, instead of os/Mac
 	public void beforeClass() {
 		if (osName.contains("Mac OS")) {
+			//check why can not use with geckodriver
 			System.setProperty("webdriver.chrome.driver", projectPath + "/browserDrivers/chromedriver");
 		} else {
 			System.setProperty("webdriver.chrome.driver", projectPath + "\\browserDrivers\\chromedriver.exe");
@@ -47,7 +48,7 @@ public class Topic_02_Selenium_Locator {
 	}
 	
 	@Test
-	//How to see the result in UI?
+	//See result in the console of Eclipe
 	public void TC_04_TagName() {
 		System.out.println(driver.findElements(By.tagName("input")).size());
 	}
@@ -86,6 +87,6 @@ public class Topic_02_Selenium_Locator {
 	
 	@AfterClass
 	public void afterClass() {
-		//driver.quit();
+		driver.quit();
 	}
 }
