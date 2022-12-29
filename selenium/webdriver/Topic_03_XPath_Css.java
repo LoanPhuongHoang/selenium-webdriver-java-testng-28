@@ -3,6 +3,7 @@ package webdriver;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -143,6 +144,10 @@ public class Topic_03_XPath_Css {
 		Assert.assertEquals(driver.findElement(By.id("txtPhone-error")).getText(), "Số điện thoại phải từ 10-11 số.");
 		
 		//Action 3
+//		WebElement phoneTextbox = driver.findElement(By.id("txtPhone"));
+//		phoneTextbox.clear();
+//		phoneTextbox.sendKeys("123456789");
+		
 		driver.findElement(By.id("txtPhone")).clear();
 		driver.findElement(By.id("txtPhone")).sendKeys("123456789012");
 		
