@@ -30,6 +30,9 @@ public class Topic_05_Web_Browser {
 		}
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		
+		//Interactive with Browser via WebDriver driver variable
+		//Interactive with Element via WebElement element variable
 	}
 	
 	@Test
