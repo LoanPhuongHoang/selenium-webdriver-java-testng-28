@@ -142,8 +142,7 @@ public class Topic_06_Web_Element_PIII {
 		Assert.assertTrue(contactInformationText.contains(fullName));
 		Assert.assertTrue(contactInformationText.contains(emailAddress));
 		
-		
-		
+				
 	}
 	
 	public void sleepInSecond(long timeInSecond) {
