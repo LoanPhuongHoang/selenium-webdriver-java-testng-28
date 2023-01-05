@@ -127,6 +127,7 @@ public class Topic_06_Web_Element_PIII {
 		}
 	
 	@Test
+	//Test case fail: Checked but still do not know why
 	public void Login_06_Valid_Info() {
 		driver.findElement(By.xpath("//div[@class='footer']//a[@title='My Account']")).click();
 		sleepInSecond(2);
@@ -154,6 +155,7 @@ public class Topic_06_Web_Element_PIII {
 		}
 		//1000ms = 1s
 	}
+	
 	@AfterClass
 	public void afterClass() {
 		driver.quit();

@@ -5,6 +5,14 @@ import java.util.Random;
 public class Topic_05_Random {
 	public static void main(String[] args) {
 		Random rand = new Random();
-		System.out.println();
+		System.out.println(rand.nextFloat());
+		System.out.println(rand.nextDouble());
+		System.out.println(rand.nextInt());
+		System.out.println(rand.nextInt(999999));
+		System.out.println(rand.nextInt(99999));
+		System.out.println("loanhoang" +rand.nextInt(9999) + "@gmail.net");
+		System.out.println(rand.nextInt(999));
+		System.out.println(rand.nextLong());
+		
 	}
 }
