@@ -1,5 +1,4 @@
 package webdriver;
-import java.awt.image.Raster;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
@@ -99,7 +98,7 @@ public class Topic_07_Textbox_TextArea {
 		//go to my info
 		driver.findElement(By.xpath("//span[text()='My Info']")).click();
 		//verify data
-		//fail this step but do not know why
+		//fail 3 codes in this step but do not know why
 //		Assert.assertEquals(driver.findElement(By.name("firstName")).getAttribute("value"), "Loan");
 //		Assert.assertEquals(driver.findElement(By.name("lastName")).getAttribute("value"), "Hoang");
 //		Assert.assertEquals(driver.findElement(By.xpath("//label[text()='Employee Id']/parent::div/following-sibling::div/input")).getAttribute("value"), employeeID);

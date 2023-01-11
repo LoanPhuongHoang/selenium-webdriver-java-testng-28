@@ -14,5 +14,12 @@ public class Topic_05_Random {
 		System.out.println(rand.nextInt(999));
 		System.out.println(rand.nextLong());
 		
+		System.out.println("loanhoang" + getRandomNumber() + "@gmail.net");
+		
+	}
+	
+	public static int getRandomNumber() {
+		Random rand = new Random();
+		return rand.nextInt(9999);
 	}
 }
