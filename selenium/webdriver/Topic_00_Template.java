@@ -37,6 +37,11 @@ public class Topic_00_Template {
 		
 	}
 	
+	@AfterClass
+	public void afterClass() {
+		//driver.quit();
+	}
+	
 	public void sleepInSecond(long timeInSecond) {
 		try {
 			Thread.sleep(timeInSecond * 1000);
@@ -45,10 +50,5 @@ public class Topic_00_Template {
 			e.printStackTrace();
 		}
 		//1000ms = 1s
-	}
-	
-	@AfterClass
-	public void afterClass() {
-		//driver.quit();
 	}
 }
